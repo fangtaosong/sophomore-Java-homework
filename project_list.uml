@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>4658ead1-7af3-4415-bfa7-a5e6e75e8d9f.TABLE:cippus_sys.project_list</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">4658ead1-7af3-4415-bfa7-a5e6e75e8d9f.TABLE:cippus_sys.project_list</node>
+    <node x="218.0" y="0.0">4658ead1-7af3-4415-bfa7-a5e6e75e8d9f.TABLE:cippus_sys.user_stu</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="分层" zoom="1.0" showDependencies="false" x="198.5" y="132.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>列</Category>
+    <Category>虚拟外键</Category>
+    <Category>键列</Category>
+  </Categories>
+</Diagram>
+

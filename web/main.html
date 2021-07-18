@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <!-- 引入vue.js -->
+    <script src="js/vue.min.js"></script>
+    <!--引入vue-resource.js插件-->
+
+    <script src="js/vue-resource.min.js"></script>
+    <script src="js/vue_in_main.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css" charset="UTF-8">
+    <link rel="stylesheet" href="css/font-awesome.css" charset="UTF-8">
+</head>
+
+<head>
+    <title>个人主页</title>
+</head>
+<body>
+<div class="upzone ">
+    <div class="sch_logo">
+        <img src="image/index/校徽无损.svg" style="width:200px;">
+    </div>
+    <div class="mytit">
+        <div>
+            大学生创新项目管理系统
+        </div>
+    </div>
+    <div class="yis_zone" id="yis">
+        <div class="halo">
+            你好，{{project.name}}
+        </div>
+        <div class="head"><img class="head_img" src="image/index/head.jpg" style="width: 50px;
+    height: 50px;
+    border-radius: 50%;"></div>
+    </div>
+    <script>
+        new Vue({
+            el: '.yis_zone',
+            data() {
+                var project = a();
+                return {
+                    project: project,
+                    count: 5
+                }
+            },
+            methods: {},
+            create() {
+                alert("登录成功")
+            }
+        })
+    </script>
+</div>
+<div class="left_zone">
+    <div class="straight">
+        <div class="menu">
+            <div class="menuItem uno">我的
+                <span style="line-height: 100px" id="look_mode_span">&nbsp; &nbsp; 点击这里查看自己的项目</span>
+            </div>
+            <div class="menuItem dos">编辑
+                <span style="line-height: 100px" id="edit_mode_span">&nbsp; &nbsp; 点击这里进入编辑模式</span>
+            </div>
+            <div class="menuItem tres">删除
+                <span style="line-height: 100px" id="del_mode_span">&nbsp; &nbsp; 删除项目，再见dlut</span></div>
+
+        </div>
+    </div>
+</div>
+<div class="center">
+    <div class="center_zone" id="create_mode" v-if="!project.isCreate">
+        <div>我觉得你应该创建一下项目</div>
+        <div>
+            <form method="post" action="newProject">
+                <div>
+                    <input v-model="project.id" name="leader" type="hidden">
+                    <input value="请输入你项目的名字，建议是英文" name="project_name">
+                </div>
+                <button type="submit">创建</button>
+            </form>
+        </div>
+    </div>
+    <div class="center_zone " id="look_mode" v-if="project.isCreate">
+        <div class="item flex"><b>项目名称:&nbsp;&nbsp;</b>{{project.Pname}}
+        </div>
+        <div class="item flex">
+            <div>
+                <b>项目成员:&nbsp;&nbsp;</b></div>
+            <div>
+                <table style="border-collapse:collapse">
+                    <tr v-for="(item,i) in project.member">
+                        <td>{{item}}</td>
+                        <td>{{i==0?"队长":"队员"}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="item"><b>申报书:&nbsp;&nbsp;</b>{{project.book}}
+        </div>
+        <div class="item"><b>项目等级:&nbsp;&nbsp;</b>{{project.projectlevel}}
+        </div>
+        <div class="item"><b>目前的阶段:&nbsp;&nbsp;</b>{{project.stage}}</div>
+    </div>
+    <div class="center_zone " id="change_mode" v-if="project.isCreate">
+        <form action="changeTeamName" method="post">
+            <div class="item flex" v-if="!project.isowner">
+                <div><b>项目名称:&nbsp;&nbsp;</b></div>
+                <input v-model="project.member[0]" v-bind:name="project.namelist[0]" type="hidden">
+                <input v-model="project.Pname" name="project_name">
+                <div class="nbsp">
+                    <button type="submit">修改名称</button>
+                </div>
+            </div>
+            <div class="item flex" v-else>
+                <div><b>项目名称:&nbsp;&nbsp;</b>{{project.Pname}}</div>
+                <div class="nbsp" v-else>由于你不是队长，所以什么事情也做不了</div>
+            </div>
+        </form>
+        <div class="item flex">
+            <form action="ChangeTeamInfo" method="post">
+                <div class="flex">
+                    <div>
+                        <b>项目成员:&nbsp;&nbsp;</b></div>
+                    <div>
+                        <table style="border-collapse:collapse" v-if="project.isowner">
+                            <tr v-for="(item,i) in project.member">
+                                <td>{{item}}</td>
+                                <td>{{i==0?"队长":"队员"}}</td>
+                            </tr>
+
+                        </table>
+                        <table style="border-collapse:collapse" v-else>
+                            <tr v-for="index of 5">
+                                <td><input v-model="project.member[index-1]" v-bind:name="project.namelist[index-1]">
+                                </td>
+                                <td>{{index==0?"队长":"队员"}}</td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+                    <div class="nbsp" v-if="!project.isowner">
+                        <button type="submit">修改队员信息(请不要修改自己，否则后果自负)</button>
+                    </div>
+                    <div class="nbsp" v-else>由于你不是队长，所以什么事情也做不了</div>
+                </div>
+
+            </form>
+        </div>
+        <div class="item flex  "><b>申报书:&nbsp;&nbsp;</b>{{project.book}}
+            <div class="nbsp">重新上传</div>
+        </div>
+        <div class="item"><b>项目等级:&nbsp;&nbsp;</b>{{project.projectlevel}}</div>
+        <div class="item"><b>目前的阶段:&nbsp;&nbsp;</b>{{project.stage}}</div>
+    </div>
+    <div class="center_zone " id="del_mode" v-if="project.isCreate">
+        <div class="item"><b>项目名称:&nbsp;&nbsp;</b>{{project.Pname}}
+        </div>
+        <div class="item flex">
+            <div>
+                <b>项目成员:&nbsp;&nbsp;</b></div>
+            <div>
+                <table style="border-collapse:collapse">
+                    <tr v-for="(item,i) in project.member">
+                        <td>{{item}}</td>
+                        <td>{{i==0?"队长":"队员"}}</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="item"><b>申报书:&nbsp;&nbsp;</b>{{project.book}}</div>
+        <div class="item"><b>项目等级:&nbsp;&nbsp;</b>{{project.projectlevel}}</div>
+        <div class="item"><b>目前的阶段:&nbsp;&nbsp;</b>{{project.stage}}</div>
+        <div class="item flex"><b>删除项目(删除之后队伍信息会清空，你和你的队员们可以创建自己新的项目，祝一帆风顺~):&nbsp;&nbsp;</b>
+        <div class="nbsp" v-if="!project.isowner">
+            <form method="post" action="RemoveProject">
+            <input type="hidden" v-model="project.member[0]" name="member_1" >
+            <input type="hidden" v-model="project.Pname" name="project_name" >
+            <button type="submit">删除项目</button>
+            </form>
+        </div>
+        <div class="nbsp" v-else>由于你不是队长，所以不能删库跑路</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    new Vue({
+        el: '.center',
+        data() {
+            var project = a();
+            if(project.Pname!==false)
+            {
+                project.isCreate=true;
+                console.log(project);
+                project.book = "申报书.pdf"
+                if (project.member[0] !== project.id) {
+                    project.isowner = true;
+                } else {
+                    project.isowner = false;
+                }
+                project.namelist = ["member_1", "member_2", "member_3", "member_4", "member_5"]
+                return {
+                    project: project,
+                    count: 5
+                }
+            }
+            else
+            {
+
+                project.isCreate=false;
+                return {
+                    project: project,
+                    count: 5
+                }
+            }
+
+
+        },
+        methods: {},
+        beforeCreate() {
+            console.log("almost got it" + this.count);
+        },
+        create() {
+            console.log("almost got it");
+            this.data()
+        }
+    })
+</script>
+<div class="footer"></div>
+<div class="mask"></div>
+</body>
+<script src="js/main_dom.js"></script>
+
+</html>

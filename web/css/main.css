@@ -1,0 +1,218 @@
+html{
+    background-image: url('../image/index/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position:center;
+    margin: 0;
+}
+body
+{
+    margin: 0;
+}
+.upzone
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: cornsilk;
+    height: 120px;
+    display: flex;
+    align-items: center;
+
+}
+
+.sch_logo
+{
+    height:50px;
+    margin-left: 100px;
+    /*position: absolute;*/
+    /*margin-top: auto;*/
+    /*margin-bottom: auto;*/
+    /*left: 100px;*/
+}
+
+.mytit {
+    margin-left: 300px;
+    font-family: 幼圆, sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+}
+.yis_zone
+{
+
+    float: right;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    right: 50px;
+}
+.halo
+{
+    font-size: 15px;
+    line-height: 50px;
+}
+.head_img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.head
+{
+    border-radius: 50%;
+    background-image: url('../image/index/head.jpg');
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    overflow: hidden;
+}
+.title {
+    width: 500px;
+    margin:auto;
+    font-family: 'Damion', cursive;
+    font-size:80px;
+    top:70px;
+    position: relative;
+    text-shadow: 3px 3px 0px #2c3e50;
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    top:120px;
+    width: 90px;
+    background: #2c3e50;
+    transition:width 1s;
+    overflow: hidden;
+    font-family: 'Michroma', sans-serif;
+    color: white;
+
+}
+
+.menu:hover {
+    width: 300px;
+}
+
+.menuItem span {
+    position: absolute;
+    left:80px;
+    top:20px;
+    transition:color 1s;
+    color:rgba(255,255,255,0);
+}
+
+.menu:hover .menuItem  span {
+    color:rgba(255,255,255,1);
+}
+
+.menuItem {
+    position: relative;
+    padding: 20px;
+    transition:border .5s, background .2s;
+    height: 100px;
+    align-items: center;
+    line-height: 100px;
+}
+
+.menuItem:hover {
+    background: #34495e;
+    cursor: pointer;
+}
+
+.uno {
+    border-left:5px solid #16a085;
+}
+
+.uno:hover{
+    border-left:20px solid #16a085;
+}
+
+.dos {
+    border-left:5px solid #2980b9;
+}
+
+.dos:hover {
+    border-left:20px solid #2980b9;
+}
+
+.tres {
+    border-left:5px solid #8e44ad;
+}
+
+.tres:hover {
+    border-left:20px solid #8e44ad;
+}
+
+.cuatro {
+    border-left:5px solid #e67e22;
+}
+
+.cuatro:hover {
+    border-left:20px solid #e67e22;
+}
+
+.cinco {
+    border-left:5px solid #e74c3c;
+}
+
+.cinco:hover {
+    border-left:20px solid #e74c3c;
+}
+.footer
+{
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    background: #2c3e50;
+    height: 150px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+
+
+}
+.center_zone
+{
+    margin-top: 120px;
+    height: 600px;
+    margin-left: 300px;
+    padding-top: 50px;
+
+
+}
+.mask
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    opacity: 0.39;
+    z-index: -2;
+}
+.item
+{
+    font-family: 微軟正黑體;
+    margin-top: 30px;
+}
+.flex
+{
+    display: flex;
+}
+table{
+    border-collapse: collapse;
+}
+table,table tr td {
+    border:1px solid #000000;
+}
+.nbsp
+{
+    margin-left: 20px;
+}
