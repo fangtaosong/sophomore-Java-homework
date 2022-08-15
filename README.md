@@ -1,8 +1,8 @@
 # 我的一个java web项目
 
-<img src="http://jeff.spring4all.com/FqswykKZn-AtSIstOyuCioVxHZf4" width="30%"  alt=""/>
+<p align="center"><img src="http://jeff.spring4all.com/FqswykKZn-AtSIstOyuCioVxHZf4" width="30%"  alt=""/></p>
 
-
+<p align="center"></p>
 
 &emsp;&emsp;先从表白墙偷一张图，图文无关。
 
@@ -764,19 +764,14 @@ public class register extends HttpServlet{
 ```
 
 下面放几张美图吧：
-<img src="http://www.constfrost.com/media/editor/image-20210720234723901_20220304202502941669.png" width="60%"  alt=""/>
-<img src="http://www.constfrost.com/media/editor/image-20210720234742244_20220304202513173316.png" width="60%"  alt=""/>
-<img src="http://www.constfrost.com/media/editor/image-20210720234755292_20220304202526276540.png" width="60%"  alt=""/>
-<img src="http://www.constfrost.com/media/editor/image-20210720234834776_20220304202549107080.png" width="60%"  alt=""/>
-<img src="http://www.constfrost.com/media/editor/image-20210720234843187_20220304202556455916.png" width="60%"  alt=""/>
-<img src="http://jeff.spring4all.com/Fkn-N7csD2tM4bkr5EelrRAFrBRI.png" width="60%"  alt=""/><br/>
+<p align="center"><img src="http://www.constfrost.com/media/editor/image-20210720234723901_20220304202502941669.png" width="60%"  alt=""/></p>
+<p align="center"><img src="http://www.constfrost.com/media/editor/image-20210720234742244_20220304202513173316.png" width="60%"  alt=""/></p>
+<p align="center"><img src="http://www.constfrost.com/media/editor/image-20210720234755292_20220304202526276540.png" width="60%"  alt=""/></p>
+<p align="center"><img src="http://www.constfrost.com/media/editor/image-20210720234834776_20220304202549107080.png" width="60%"  alt=""/></p>
+<p align="center"><img src="http://www.constfrost.com/media/editor/image-20210720234843187_20220304202556455916.png" width="60%"  alt=""/></p>
+<p align="center"><img src="http://jeff.spring4all.com/Fkn-N7csD2tM4bkr5EelrRAFrBRI.png" width="60%"  alt=""/><br/></p>
 
-![](/media/editor/image-20210720234723901_20220304202502941669.png){:class=center width='70%'}
-![](/media/editor/image-20210720234742244_20220304202513173316.png){:class=center width='70%'}
-![](/media/editor/image-20210720234755292_20220304202526276540.png){:class=center width='70%'}
-![](/media/editor/image-20210720234834776_20220304202549107080.png){:class=center width='70%'}
-![](/media/editor/image-20210720234843187_20220304202556455916.png){:class=center width='70%'}
-![](http://jeff.spring4all.com/Fkn-N7csD2tM4bkr5EelrRAFrBRI.png){:class=center width='70%'}
+
 
 &emsp;&emsp;目前项目已经开源了，大伙可以去看一看:[Github-科创平台管理系统](https://github.com/fangtaosong/sophomore-Java-homework "Github-科创平台管理系统")
 
