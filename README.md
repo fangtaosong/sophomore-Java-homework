@@ -2,7 +2,7 @@
 
 
 
-<center>
+
    <img src="http://jeff.spring4all.com/FqswykKZn-AtSIstOyuCioVxHZf4" alt="img" width='60% />
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
@@ -11,7 +11,7 @@
     padding: 2px;">
       先从表白墙偷一张图，图文无关。
   	</div>
-</center>
+
 
 
 &emsp;&emsp;大二小学期开始了，这次课程设计的要求是开发一个Java的大作业，作业选题是各种各样的管理系统。每个队伍最多五人，而且选题不可以重复。我的选题是大学生创新项目管理系统。
