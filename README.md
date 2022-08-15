@@ -3,7 +3,7 @@
 
 
 <center>
-   <img src="http://jeff.spring4all.com/FqswykKZn-AtSIstOyuCioVxHZf4" alt="img" style="zoom:33%;" />
+   <img src="http://jeff.spring4all.com/FqswykKZn-AtSIstOyuCioVxHZf4" alt="img" width='60% />
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
@@ -771,12 +771,12 @@ public class register extends HttpServlet{
 ```
 
 下面放几张美图吧：
-<img src="http://www.constfrost.com/media/editor/image-20210720234723901_20220304202502941669.png" width="200" height="200" alt=""/><br/>
-<img src="http://www.constfrost.com/media/editor/image-20210720234742244_20220304202513173316.png" width="200" height="200" alt=""/><br/>
-<img src="http://www.constfrost.com/media/editor/image-20210720234755292_20220304202526276540.png" width="200" height="200" alt=""/><br/>
-<img src="http://www.constfrost.com/media/editor/image-20210720234834776_20220304202549107080.png" width="200" height="200" alt=""/><br/>
-<img src="http://www.constfrost.com/media/editor/image-20210720234843187_20220304202556455916.png" width="200" height="200" alt=""/><br/>
-<img src="http://jeff.spring4all.com/Fkn-N7csD2tM4bkr5EelrRAFrBRI.png" width="200" height="200" alt=""/><br/>
+<img src="http://www.constfrost.com/media/editor/image-20210720234723901_20220304202502941669.png" width="60%"  alt=""/><br/>
+<img src="http://www.constfrost.com/media/editor/image-20210720234742244_20220304202513173316.png" width="60%"  alt=""/><br/>
+<img src="http://www.constfrost.com/media/editor/image-20210720234755292_20220304202526276540.png" width="60%"  alt=""/><br/>
+<img src="http://www.constfrost.com/media/editor/image-20210720234834776_20220304202549107080.png" width="60%"  alt=""/><br/>
+<img src="http://www.constfrost.com/media/editor/image-20210720234843187_20220304202556455916.png" width="60%"  alt=""/><br/>
+<img src="http://jeff.spring4all.com/Fkn-N7csD2tM4bkr5EelrRAFrBRI.png" width="60%"  alt=""/><br/>
 
 ![](/media/editor/image-20210720234723901_20220304202502941669.png){:class=center width='70%'}
 ![](/media/editor/image-20210720234742244_20220304202513173316.png){:class=center width='70%'}
