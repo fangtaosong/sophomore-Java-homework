@@ -1,6 +1,6 @@
 # 我的一个java web项目
 
-<img src="http://jeff.spring4all.com/FqswykKZn-AtSIstOyuCioVxHZf4" width="60%"  alt=""/>
+<img src="http://jeff.spring4all.com/FqswykKZn-AtSIstOyuCioVxHZf4" width="30%"  alt=""/>
 
 
 
