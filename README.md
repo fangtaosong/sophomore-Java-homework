@@ -775,4 +775,4 @@ public class register extends HttpServlet{
 
 &emsp;&emsp;目前项目已经开源了，大伙可以去看一看:[Github-科创平台管理系统](https://github.com/fangtaosong/sophomore-Java-homework "Github-科创平台管理系统")
 
-![](/media/editor/H0K%$XKZSPLLW`HNW${EDHY_20220304202723036933.png){:class=center}
+<p align="center"><img src="http://www.constfrost.com/media/editor/H0K%$XKZSPLLW`HNW${EDHY_20220304202723036933.png" width="30%"  alt=""/></p>
