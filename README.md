@@ -2,16 +2,8 @@
 
 
 
-
-   <img src="http://jeff.spring4all.com/FqswykKZn-AtSIstOyuCioVxHZf4" alt="img" width='60% />
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">
-      先从表白墙偷一张图，图文无关。
-  	</div>
-
+<img src="http://jeff.spring4all.com/FqswykKZn-AtSIstOyuCioVxHZf4" alt="img" width='60% />
+&emsp;&emsp;先从表白墙偷一张图，图文无关。
 
 
 &emsp;&emsp;大二小学期开始了，这次课程设计的要求是开发一个Java的大作业，作业选题是各种各样的管理系统。每个队伍最多五人，而且选题不可以重复。我的选题是大学生创新项目管理系统。
@@ -771,11 +763,11 @@ public class register extends HttpServlet{
 ```
 
 下面放几张美图吧：
-<img src="http://www.constfrost.com/media/editor/image-20210720234723901_20220304202502941669.png" width="60%"  alt=""/><br/>
-<img src="http://www.constfrost.com/media/editor/image-20210720234742244_20220304202513173316.png" width="60%"  alt=""/><br/>
-<img src="http://www.constfrost.com/media/editor/image-20210720234755292_20220304202526276540.png" width="60%"  alt=""/><br/>
-<img src="http://www.constfrost.com/media/editor/image-20210720234834776_20220304202549107080.png" width="60%"  alt=""/><br/>
-<img src="http://www.constfrost.com/media/editor/image-20210720234843187_20220304202556455916.png" width="60%"  alt=""/><br/>
+<img src="http://www.constfrost.com/media/editor/image-20210720234723901_20220304202502941669.png" width="60%"  alt=""/>
+<img src="http://www.constfrost.com/media/editor/image-20210720234742244_20220304202513173316.png" width="60%"  alt=""/>
+<img src="http://www.constfrost.com/media/editor/image-20210720234755292_20220304202526276540.png" width="60%"  alt=""/>
+<img src="http://www.constfrost.com/media/editor/image-20210720234834776_20220304202549107080.png" width="60%"  alt=""/>
+<img src="http://www.constfrost.com/media/editor/image-20210720234843187_20220304202556455916.png" width="60%"  alt=""/>
 <img src="http://jeff.spring4all.com/Fkn-N7csD2tM4bkr5EelrRAFrBRI.png" width="60%"  alt=""/><br/>
 
 ![](/media/editor/image-20210720234723901_20220304202502941669.png){:class=center width='70%'}
